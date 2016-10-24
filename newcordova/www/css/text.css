@@ -1,0 +1,109 @@
+html {
+  margin:0px;
+  padding:0px;
+  color:white;
+}
+
+body {
+  margin:0px;
+  padding: 0px;
+}
+
+.header {
+  width:100%;
+  height:200px;
+  position:fixed;;
+  top:0px;
+  z-index: 999;
+  border-bottom: solid;
+  background-color: #00897b;
+}
+
+.photo {
+  margin-top: 10%;
+  margin-left: 4%;
+  width:120px;
+  height:120px;
+  border-radius:400px;
+  background-color: red;
+  border: solid;
+  float:left;
+}
+
+.textWrap {
+  float:left;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.step {
+  width:100%;
+  height:83px;
+}
+
+.headerTextExplain {
+  font-size: 21px;
+  line-height: 160%;
+}
+.explainTwo {
+  margin-top: 10%;
+}
+
+.explainOne {
+  margin-top: 15%;
+}
+.headerTextName {
+  margin-top: 3%;
+  font-size: 21px;
+}
+
+.headerTextYear {
+  margin-top: 6%;
+  font-size: 16px;
+}
+
+
+
+.contentWrap {
+  width:92%;
+  position:absolute;
+  top:203px;
+  background-color: #d81b60;
+  z-index: 1;
+  text-align: justify;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  min-height: 354px;
+}
+.footer {
+  border-top: solid;
+  width:100%;
+  height:80px;
+  position:fixed;
+  bottom:0px;
+  z-index: 999;
+  background-color: #00897b;
+
+}
+
+.icon {
+  width:60px;
+  height:60px;
+  margin-left: 7%;
+  margin-top: 3%;
+  margin-right: 5%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  float:left;
+}
+
+.iconLeft {
+  margin-left: 13%;
+}
+
+.backButton { background-image: url("../img/back-button.png");}
+.homeButton { background-image: url("../img/home.png");}
+.menuButton { background-image: url("../img/list.png");}

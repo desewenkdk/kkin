@@ -1,0 +1,115 @@
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+       <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+
+        <!--script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script-->
+
+        <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+          <script type="text/javascript" src="js/text.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>main page</title>
+
+
+    </head>
+    <body>
+
+
+      <!--div ng-app="myApp" ng-controller="myCtrl">
+
+      <div ng-click="count = count + 1">Click Me!</div>
+
+      <p>{{ count }}</p>
+
+      </div>
+
+      <body ng-app="myApp"-->
+<div ng-app="myApp">
+
+<p><a href="#/">Main</a></p>
+
+<a href="#red">Red</a>
+<a href="#green">Green</a>
+<a href="#blue">Blue</a>
+
+<div ng-view></div>
+</div>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "list0.htm"
+    })
+    .when("/red", {
+        templateUrl : "list00.htm"
+    })
+    .when("/green", {
+        templateUrl : "list01.htm"
+    })
+    .when("/blue", {
+        templateUrl : "list02.htm"
+    });
+});
+</script>
+      <!--div class="logo"></div>
+      <div class="word"></div>
+      <div class="back">
+        <div class="top-back"></div>
+        <div class="bb">
+        <div class="col-xs-3 col-1"><div class="blk one but1"></div>항공선각자</div>
+
+        <div class="col-xs-3 col-1"><div class="blk three but3"></div>항공독립투사</div>
+        <div class="col-xs-3 col-1"><div class="blk two but2"></div>공군창군7인</div>
+        <div class="col-xs-3 col-1"><div class="blk four but4"></div>625전쟁영웅</div>
+
+        <div class="col-xs-3 col-2"><div class="blk five but5"></div>살신성인참군인</div>
+        <div class="col-xs-3 col-2"><div class="blk six but6"></div>공군역사ucc</div>
+        <div class="col-xs-3 col-2"><div class="blk seven but7"></div>이달의공군인물</div>
+        <div class="col-xs-3 col-2"><div class="blk eight but8"></div>공군연표</div>
+        </div>
+      </div-->
+    </body>
+</html>
